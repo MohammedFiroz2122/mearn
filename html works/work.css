@@ -1,0 +1,130 @@
+.row{
+    background-color: red;
+    border: 0.5px solid black;
+    width: 777px;
+    height: 400px;
+    position: relative;
+}
+.first{
+    background-color: rgb(133, 35, 133);
+    width: 150px;
+    height: 395px;
+    position: absolute;
+    left: 1px;
+}
+.second{
+    background-color: rgb(15, 15, 214);
+    width: 150px;
+    height: 395px;
+    position: absolute;
+    left: 155px;
+}
+.third{
+    background-color: brown;
+    width: 150px;
+    height: 395px;
+    position: absolute;
+    left: 310px;
+}
+.fourth{
+    background-color:rgb(197, 48, 72);
+    width: 150px;
+    height: 395px;
+    position: absolute;
+    left: 465px;
+}
+.fifth{
+    background-color: rgb(55, 163, 27);
+    width: 150px;
+    height: 395px;
+    position: absolute;
+    left: 620px;
+}
+.col{
+    background-color: red;
+    border: 0.5px solid black;
+    width: 777px;
+    height: 400px;
+    position: relative;
+    top: 10px;
+}
+.sixth{
+    background-color: rgb(133, 35, 133);
+    width: 150px;
+    height: 395px;
+    position: absolute;
+    left: 1px;
+}
+.seventh{
+    background-color: rgb(15, 15, 214);
+    width: 150px;
+    height: 395px;
+    position: absolute;
+    left: 155px;
+}
+.eighth{
+    background-color: brown;
+    width: 150px;
+    height: 395px;
+    position: absolute;
+    left: 310px;
+}
+.nineth{
+    background-color: rgb(197, 48, 72);
+    width: 150px;
+    height: 395px;
+    position: absolute;
+    left: 465px;
+}
+.tenth{
+    background-color: rgb(55, 163, 27);
+    width: 150px;
+    height: 395px;
+    position: absolute;
+    left: 620px;
+}
+.parent{
+    background-color: red;
+    border: 0.5px solid black;
+    width: 777px;
+    height: 400px;
+    position: relative;
+    top: 20px;
+    left: 58%;
+    
+}
+.box1{
+    background-color: rgb(133, 35, 133);
+    width: 150px;
+    height: 395px;
+    position: absolute;
+    left: 1px;
+}
+.box2{
+    background-color: rgb(15, 15, 214);
+    width: 150px;
+    height: 395px;
+    position: absolute;
+    left: 155px;
+}
+.box3{
+    background-color: brown;
+    width: 150px;
+    height: 395px;
+    position: absolute;
+    left: 310px;
+}
+.box4{
+    background-color: rgb(197, 48, 72);
+    width: 150px;
+    height: 395px;
+    position: absolute;
+    left: 465px;
+}
+.box5{
+    background-color: rgb(55, 163, 27);
+    width: 150px;
+    height: 395px;
+    position: absolute;
+    left: 620px;
+}

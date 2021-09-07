@@ -1,0 +1,197 @@
+body{
+    background-color: black;
+    
+}
+h1{
+    color: white;
+    text-align: center;
+}
+.one{
+    background-color: gray;
+    border: 1px solid black;
+    width: 10%;
+    height: 172px;
+    margin-top: 5px;
+    margin-left: 313px;
+    float: left;
+}
+.two{
+    background-color: rgb(30, 124, 61);
+    border: 1px solid black;
+    width: 10%;
+    height: 172px;
+    margin-top: 5px;
+    
+    float: left;
+}
+.three{
+    background-color: rgb(32, 90, 9);
+    border: 1px solid black;
+    width: 10%;
+    height: 172px;
+    margin-top: 5px;
+   
+    float: left;
+}
+.four{
+    background-color: rgb(66, 156, 23);
+    border: 1px solid black;
+    width: 10%;
+    height: 172px;
+    margin-top: 5px;
+    
+    float: left;
+}
+.five{
+    background-color: rgb(221, 220, 220);
+    border: 1px solid black;
+    width: 10%;
+    height: 172px;
+    margin-top: 5px;
+    margin-right: 309px;
+    float: left;
+}
+.six{
+    background-color: rgb(230, 130, 17);
+    border: 1px solid black;
+    width: 10%;
+    height: 172px;
+    margin-top: 5px;
+    margin-left: 178px;
+    float: left;
+}
+.seven{
+    background-color: rgb(201, 117, 117);
+    border: 1px solid black;
+    width: 10%;
+    height: 172px;
+    margin-top: 5px;
+   
+    float: left;
+}
+.eight{
+    background-color: rgb(201, 108, 193);
+    border: 1px solid black;
+    width: 10%;
+    height: 172px;
+    margin-top: 5px;
+    
+    float: left;
+}
+.nine{
+    background-color: rgb(93, 133, 241);
+    border: 1px solid black;
+    width: 10%;
+    height: 172px;
+    margin-top: 5px;
+    
+    float: left;
+}
+.ten{
+    background-color: rgb(91, 38, 112);
+    border: 1px solid black;
+    width: 10%;
+    height: 172px;
+    margin-top: 5px;
+    
+    float: left;
+}
+.eleven{
+    background-color: rgb(93, 133, 250);
+    border: 1px solid black;
+    width: 10%;
+    height: 172px;
+    margin-top: 5px;
+    
+    float: left;
+}
+.twelve{
+    background-color: rgb(68, 68, 68);
+    border: 1px solid black;
+    width: 10%;
+    height: 172px;
+    margin-top: 5px;
+    margin-right: 100px;
+    float: left;
+}
+.thirteen{
+    background-color: cyan;
+    border: 1px solid black;
+    width: 10%;
+    height: 172px;
+    margin-top: 5px;
+    margin-left: 44px;
+    float: left;
+}
+.forteen{
+    background-color: rgb(216, 207, 122);
+    border: 1px solid black;
+    width: 10%;
+    height: 172px;
+    margin-top: 5px;
+    
+    float: left;
+}
+.fifteen{
+    background-color: rgb(209, 155, 94);
+    border: 1px solid black;
+    width: 10%;
+    height: 172px;
+    margin-top: 5px;
+    
+    float: left;
+}
+.sixteen{
+    background-color: rgb(201, 37, 114);
+    border: 1px solid black;
+    width: 10%;
+    height: 172px;
+    margin-top: 5px;
+   
+    float: left;
+}
+.seventeen{
+    background-color: rgb(36, 35, 35);
+    border: 1px solid black;
+    width: 10%;
+    height: 172px;
+    margin-top: 5px;
+    
+    float: left;
+}
+.eighteen{
+    background-color: cyan;
+    border: 1px solid black;
+    width: 10%;
+    height: 172px;
+    margin-top: 5px;
+    
+    float: left;
+}
+.nineteen{
+    background-color: rgb(21, 68, 19);
+    border: 1px solid black;
+    width: 10%;
+    height: 172px;
+    margin-top: 5px;
+    
+    float: left;
+}
+.twenty{
+    background-color: rgb(78, 34, 114);
+    border: 1px solid black;
+    width: 10%;
+    height: 172px;
+    margin-top: 5px;
+   
+    float: left;
+}
+.twentyone{
+    background-color: rgb(32, 9, 43);
+    border: 1px solid black;
+    width: 10%;
+    height: 172px;
+    margin-top: 5px;
+    
+    float: left;
+}

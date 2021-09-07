@@ -1,0 +1,12 @@
+body{
+    height: 1400px;
+}
+.fixed{
+    border: 1px solid black;
+    width:100px;
+    background-color: cadetblue;
+    height: 100px;
+    position: sticky;
+    top: 50px;
+    left: 250px;
+}

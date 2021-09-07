@@ -1,0 +1,15 @@
+.row{
+    background-color: brown;
+    width: 400px;
+    height: 400px;
+    position: relative;
+
+}
+.col{
+    background-color: cadetblue;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+}

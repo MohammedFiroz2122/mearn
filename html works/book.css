@@ -1,0 +1,39 @@
+.parent{
+    background-color: rgb(233, 230, 230);
+    width:1500px;
+    height: 500px;
+    display: flex;
+    border: 1px solid black;
+    justify-content: space-evenly;
+    
+}
+.col{
+    width:303px;
+    height: 442px;
+    border: 1px solid black;
+    margin-top: 15px;
+    
+    
+}
+img{
+    width: 198px;
+    height: 173px;
+    border-radius: 800px;
+    margin-left: 50px;
+    
+}
+.box{
+    background-color: rgb(233, 230, 230);
+    width:1500px;
+    height: 900px;
+    display: flex;
+    border: 1px solid black;
+    justify-content: space-evenly;
+}
+.btn{
+    background-color: orangered;
+    width: 75px;
+    height: 35px;
+    margin-left: 31%;
+    margin-top: 16%;
+}

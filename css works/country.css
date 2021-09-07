@@ -1,0 +1,14 @@
+.box{
+    background-color: cornflowerblue;
+    text-align: center;
+    width: 200px;
+    height: max-content;
+    margin:10px;
+}
+h1{
+    text-align: center;
+}
+.flag{
+    width: 90px;
+    height: 90px;
+}
