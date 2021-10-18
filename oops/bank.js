@@ -1,26 +1,143 @@
-class Bank{
-    createAccount(p_name,acno,ac_type,min_bal){
-        this.p_name=p_name,
-        this.acno=acno,
-        this.ac_type=ac_type,
-        this.balance=min_bal
+
+
+//bank
+//authenticate
+//fund transfer 
+
+class bank {
+    session={}
+
+    accounts = {
+        1001: {
+            acno: 1001, password: "userone", balance: 5000, transactions:
+                [
+                    { to: 1002, amount: 500 },
+                    { to: 1003, amount: 600 },
+                    { to: 1004, amount: 700 }
+                ]
+        },
+        1002: {
+            acno: 1002, password: "usertwo", balance: 7000,
+            transactions:
+                [
+                    { to: 1001, amount: 500 },
+                    { to: 1003, amount: 600 },
+                    { to: 1004, amount: 700 }
+                ]
+        },
+        1003: {
+            acno: 1003, password: "userthree", balance: 8000,
+            transactions:
+                [
+                    { to: 1001, amount: 500 },
+                    { to: 1002, amount: 600 },
+                    { to: 1004, amount: 700 }
+                ]
+        },
+        1004: {
+            acno: 1001, password: "userone", balance: 9000,
+            transactions:
+                [
+                    { to: 1001, amount: 500 },
+                    { to: 1003, amount: 600 },
+                    { to: 1004, amount: 700 }
+                ]
+        },
     }
-    deposit(amount){
-        this.balance += amount
-        console.log(`your accnt has been credited with ${amount} your available balance is ${this.balance}`);
+
+    getAccountDetails() {
+        return this.accounts
     }
-    withdrawal(amount){
-        if(this.balance > amount){
-            this.balance -= amount
-            console.log(`your account has been debited with ${amount} your available balance is ${this.balance}`);
+
+    validateAccountNumber(accno) {
+        return accno in this.accounts?true:false
+    }
+
+    authenticate(accno,password){
+        if(this.validateAccountNumber(accno)){
+            let pwd=this.accounts[accno].password
+            if(pwd==password){
+                this.session["user"]=accno //{user:accno}
+                // return 1 //success
+                console.log("successful");
+            }
+            else{
+                // return //invalid psswd
+                console.log("invalid psswrd");
+            }
         }
         else{
-            console.log("transaction failed due to insufficient fund");
+            // return 0
+             console.log("invalid accno")
         }
     }
+
+    balanceEnquiry(){
+        var user=this.session["user"]
+        return this.accounts[user].balance
+    }
+
+    fundTransfer(to_acc,amount){
+        if(this.validateAccountNumber(to_acc)){
+            let user=this.session["user"]
+            let bal=this.balanceEnquiry()
+            if(bal>amount){
+                //debit
+                this.accounts[user].balance -= amount
+
+                //credit
+                this.accounts[to_acc].balance += amount
+
+                this.accounts[user].transactions.push({to:to_acc,amount:amount})
+                console.log(this.accounts[user]);
+            }
+            else{
+                console.log("insufficient balance");
+            }
+        }
+        else{
+            console.log("invalid accnt");
+        }
+    }
+
+    paymentHistory(){
+        let user=this.session["user"]
+        console.log(this.accounts[user].transactions);
+    }
+
+   transactionHistory(){
+       //transaction
+       let user=this.session["user"]    //1002
+       var transaction_history=this.accounts[user].transactions
+       console.log(transaction_history);
+
+   }
+    creditTransaction(){
+       var user= this.session["user"]
+       var credit=[]
+        for(let account in this.accounts){ 
+        let trans=this.accounts[account].transactions
+            for(let transaction of trans){
+                if(transaction.to==user){
+                    credit.push({from:account,amount:transaction.amount})
+                }
+            }
+            
+        }
+        console.log(credit);
+    }
+
 }
 
-var obj1=new Bank()
-obj1.createAccount("Rahul",0250,"savings",5000)
-obj1.deposit(3000)
-obj1.withdrawal(5000)
+
+
+
+var obj = new bank()
+// console.log(obj.getAccountDetails());
+// console.log(obj.validateAccountNumber(1002));
+var user=obj.authenticate(1001,"userone")
+// console.log(obj.balanceEnquiry());
+// obj.fundTransfer(1003,5000)
+// obj.paymentHistory()
+obj.transactionHistory()
+obj.creditTransaction()
