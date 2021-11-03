@@ -1,0 +1,29 @@
+.bhim{
+    margin-left: 20px;
+    float: left;
+}
+.send{
+    float: left;
+}
+
+.scan{
+    float: left;
+    margin-left: 20px;
+}
+.container{
+    width: 26%;
+    height:50px;
+    padding: 10px;
+}
+
+.container_carousel{
+    width:50%;
+    height:100px;
+    margin-left:300px;
+    margin-top: 40px;
+}
+
+.d-block{
+    height:300px;
+    
+}

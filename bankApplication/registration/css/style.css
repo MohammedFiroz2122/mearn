@@ -1,0 +1,44 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+img{
+    width: 65%;
+    height: 80%;
+    margin-left: 20%;
+    margin-top: 20px;
+}
+
+.parent{
+    background-color: white;
+    height: 600px;
+}
+
+body{
+    background-color:red;
+    background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20190223/ourmid/pngtree-fresh-bank-card-machine-advertising-background-backgroundblue-backgroundmanmoneyhand-paintedatmsimplemachine-image_83842.jpg);
+    background-size:cover ;
+}
+
+.right{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color: red;
+}
+
+h1{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+p{
+    font-family: 'Cookie', cursive;
+}
+
+h3{
+    font-family: 'Cinzel', serif;
+}
